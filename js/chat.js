@@ -62,7 +62,7 @@
             $('.messages .issues').addClass('active');
         }
 
-        sendMessage('Hello Philip! :)', showButtons);
+        sendMessage('Ola, sou seu assistente Virtual da prefeitura de Sao Paulo, o que pretende relatar?)', showButtons);
 
         $('.report-buttons button').click(function() {
             sendMessage($(this).text(), function () {
