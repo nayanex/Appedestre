@@ -225,6 +225,17 @@
   display: none;
 }
 
+.colorstrip{
+    height: 20%;
+    vertical-align: top;
+    display: block;
+    border-style: solid;
+    z-index: -1;
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+
 .carousel-cell {
   width: 100%;
   height: 200px;
@@ -232,8 +243,42 @@
   background: #8C8;
   border-radius: 5px;
   counter-increment: gallery-cell;
+  background-size: cover;
+  font-size: 200%;
+  color: white;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 0%;
+}
+
+.carousel-cell-img-buraco {
   background-image: url(../img/portfolio/buraco.jpg);
   background-size: cover;
+}
+
+.carousel-cell-img-desnivel {
+  background-image: url(../img/portfolio/desnivel.jpg);
+  background-size: cover;
+}
+
+.carousel-cell-img-entulho {
+  background-image: url(../img/portfolio/entulho.jpg);
+  background-size: cover;
+}
+
+.carousel-cell-img-acessib {
+  background-image: url(../img/portfolio/falta_acessibilidade.jpg);
+  background-size: cover;
+}
+
+.carousel-cell-img-mato {
+  background-image: url(../img/portfolio/mato.jpg);
+}
+
+.carousel-cell-img-poste {
+  background-image: url(../img/portfolio/poste.jpg);
+  background-size: cover;
+
 }
 
 @media screen and ( min-width: 768px ) {
@@ -245,7 +290,7 @@
 .carousel-cell:before {
   display: block;
   text-align: center;
-  content: counter(gallery-cell);
+  background-image: url(../img/portfolio/buraco.jpg);
   line-height: 200px;
   font-size: 80px;
   color: white;
